@@ -20,32 +20,21 @@ btn.addEventListener('click',(e)=>{
         console.log(urlupdate);
         const getUser=async()=>{
             try{
-                
-
-                
                 console.log("loading");
                 let response=await axios.get(urlupdate);
                 console.log(response.data);
 
                 loginName.innerHTML=`${response.data.login}`;
-                console.log(response.data.login)
                 name.innerHTML=`${response.data.name}`;
-                console.log(response.data.name)
                 bio.innerHTML=`${response.data.bio}`;
-                console.log(response.data.bio)
                 userlocation.innerHTML=`${response.data.location}`;
-                console.log(response.data.location)
                 pubreposcount.innerHTML=`${response.data.public_repos}`;
-                console.log(response.data.public_repos)
                 followerscount.innerHTML=`${response.data.followers}`;
-                console.log(response.data.followers)
-                followingcount.innerHTML=`${response.data.followingcount}`;
-                console.log(response.data.followingcount)
+                followingcount.innerHTML=`${response.data.following}`;
+
                 location.innerHTML=`${response.data.location}`;
-                console.log(response.data.location)
                 avatar.style.backgroundImage=`url(${response.data.avatar_url})`;
                 avatar.style.backgroundSize='cover';
-                console.log(response.data.avatar_url)
             }catch(e){
                 console.log("err-",e);
             } 
