@@ -54,7 +54,9 @@ btn.addEventListener('click',(e)=>{
                     userlocation.innerHTML=data.location;
                 }
                 input.value='';
+
             }catch(e){
+                
                 console.log("err-",e);
                 loginName.innerHTML=`404User not found`;
                 name.innerHTML=``;
@@ -65,9 +67,7 @@ btn.addEventListener('click',(e)=>{
                 followingcount.innerHTML=``;
                 avatar.style.backgroundImage=`url(https://agreatdream.com/wp-content/uploads/2012/04/question-mark.jpg)`;
                 avatar.style.backgroundSize='cover';
-                icon.style.display='none';
-                
-
+                icon.style.display='none'
             } 
         };getUser();
     }

@@ -28,7 +28,7 @@ DevConnector is a simple web application that fetches and displays GitHub user p
 - Code refactoring: Modularize JavaScript for better maintainability.
 
 ## Technologies Used
-- HTML5 & CSS3
-- JavaScript (ES6+)
-- Axios for HTTP requests
-- Font Awesome for icons
+- HTML5 & CSS3.
+- JavaScript (ES6+).
+- Axios for HTTP requests.
+- Font Awesome for icons.
