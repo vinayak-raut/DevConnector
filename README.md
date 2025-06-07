@@ -1,2 +1,2 @@
 # DevConnector
-This project for DevConnector
+This project for DevConnector.

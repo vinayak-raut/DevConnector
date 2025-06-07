@@ -11,35 +11,36 @@
     <div class="container">
         <h1>DevConnector</h1>
         <form action="#">
-            <input type="text" name="user" id="user" placeholder="Enter a GitHub username">
-            <button>Search</button>
+            <input type="text" name="user" id="input" placeholder="Enter a GitHub username">
+            <button id="btn">Search</button>
         </form>
         <div class="card">
             <div class="upcard">
                 <div class="avatar"></div>
                 <div class="info">
-                    <p class="loginname"></p>
-                    <p class="name"></p>
-                    <p class="bio"></p>
-                    <p><i class="fa-solid fa-location-dot"></i></p>
+                    <p class="loginname">User Name</p>
+                    <p class="name">Name</p>
+                    <p class="bio">Bio</p>
+                    <p><i class="fa-solid fa-location-dot"></i><span class="userlocation">Location</span></p>
                 </div>
             </div>
             <div class="downcard">
                 <div class="pubrepos">
                     <p>Public Reops</p>
-                    <p></p>
+                    <p class="pubreposcount">0</p>
                 </div>
                 <div class="followers">
                     <p>Followers</p>
-                    <p></p>
+                    <p class="followerscount">0</p>
                 </div>
                 <div class="following">
                     <p>Following</p>
-                    <p></p>
+                    <p class="followingcount">0</p>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
