@@ -138,9 +138,6 @@ i{
     .container {
         min-width: 100vw;
     }
-   body{
-        background: black;
-   }
    .upcard{
         display: flex;
         flex-direction: column;
